@@ -1,0 +1,65 @@
+@import 'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap';
+
+:root {
+  --background-color-primary: #3a3b62;
+  --background-color-second: #1a1a28;
+  --border-color-primary: #565252;
+  --text-color-primary: white;
+  --text-color-second: #656565;
+  --text-size: 1rem;
+  --text-size-small: .8rem;
+  --border-radius: .5rem;
+  --border-radius-inner: .35rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  overscroll-behavior: none;
+
+  &::-webkit-scrollbar {
+    background-color: transparent;
+
+    &-thumb {
+      background-color: var(--background-color-second);
+      border-radius: var(--border-radius-inner);
+    }
+  }
+}
+
+body {
+  background-color: var(--background-color-second);
+}
+
+h1, h2, h3, h4, h5, h6, p, span {
+  color: var(--text-color-primary);
+  cursor: default;
+}
+
+input {
+  border: 0;
+  background-color: var(--background-color-second);
+  color: var(--text-color-primary);
+  outline: none;
+  padding: .6rem 1rem;
+  font-size: var(--text-size);
+
+  &::placeholder {
+    letter-spacing: .05rem;
+    color: var(--text-color-second);
+  }
+}
+
+button {
+  border: 0;
+  background-color: var(--background-color-second);
+  color: var(--text-color-primary);
+  outline: none;
+  font-size: var(--text-size);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
